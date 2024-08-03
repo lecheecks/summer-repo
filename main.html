@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Personal Portfolio Website - Prince Montgomery</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/e1c67efece.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+    <div id="header">
+     <div class="container">
+        <nav>
+            <img src="images/thgp_logo_720.png" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li> 
+            </ul>
+        </nav>
+        <!----- about---------->  
+        <div class="header-text">
+            <p><span>Athlete</span></p>
+            <h1>Hi , I'm <span>Prince</span> <br> from <span>El Cerrito California</span></h1>
+        </div>
+     </div> 
+    </div>
+    <div id="#about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_6862.jpeg "> 
+                </div>
+                <div class="about-col-2">  
+                    <h1 class="sub-title">About Me</h1> 
+                    <p> I am Prince Montgomery from Las vegas, i go to El cerrito highschool, And play basketball and run track! </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')" > Skills </p>
+                        <p class="tab-links" onclick="opentab('Experience')" > Experience </p>
+                        <p class="tab-links"onclick="opentab('Education')" >Education </p>
+                  </div>
+                  <div class="tab-contents active-tab" id="Skills">
+                      <ul>
+                      <li><span>cooking</span><br>I took cullinary classes last summer and know how to cook very well</li>    
+                      <li><span>Athletics</span><br>im a pretty athletic guy and would say im decent at a lot of sport</li>    
+                      <li><span>Gaming</span><br>Im good at every game i play and adapt quick</li>    
+                      </ul>
+                  </div>
+                  <div class="tab-contents" id="Experience">
+                      <ul>
+                      <li><span>Highschool</span><br>I have played basketball and track.</li>    
+                      <li><span>internship</span><br>i did a cullinary internship where we not only cooked food but fed people too.</li>    
+                      <li><span>Hidden Genius Project</span><br>coding a summer portfolio</li>    
+                      </ul>
+              </div><div class="tab-contents" id="Education">
+                  <ul>
+                  <li><span>UI?UX</span><br>Designing Web/App interfaces</li>    
+                  <li><span>Wjkdkmnt</span><br>Designing Web/App interfaces</li>    
+
+                  </ul>
+          </div>
+          </div>
+      </div>
+      </div>
+      </div> 
+    <!-- -------------services-------------- -->
+     <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                 <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Tutoring</h2>
+                    <p> I can help with homework, i am good at helping other people understamd easily. </p>
+                    <a href="#">Learn more</a>
+                 </div>
+                 <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Designing</h2>
+                    <p> I am still learning about Web Designing, but im confidant in my abbilities. </p>
+                    <a href="#">Learn more</a>
+                 </div>
+                 <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>art Design</h2>
+                    <p> Im still learning how to make different digital art using different tools but i got the hang of it.</p>
+                    <a href="#">Learn more</a>
+                 </div>
+                </div>
+                
+            </div>
+        </div>
+     
+     
+     <script>
+  
+  var tablinks = document.getElementsByClassName("tab-links"); 
+  var tabcontents = document.getElementsByClassName("tab-contents"); 
+  
+  function opentab(tabname){
+      for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+  }
+  
+      </script>
+  
+  </body>
+  </html>
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>contact@Prince.Montgomery@hgs.hiddengeniusproject.org</p>
+                <p>510-679-8290</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-snapchat"></i></a>
+                    <a href=""><i class="fa-brands fa-envelope"></i></a>
+                    
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                   <input type="text" name="Name" placeholder="Your Name" required>
+                   <input type="email" name="email" placeholder="Your Email" required>
+                   <textarea name="Message" rows="6" placeholder="You Message"></textarea>
+                   <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- -------------Portfolio-------------- -->
+ <div id="portfolio">
+
+ </div>
+
+ <script>
+
+var tablinks = document.getElementsByClassName("tab-links"); 
+var tabcontents = document.getElementsByClassName("tab-contents"); 
+
+function opentab(tabname){
+  for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+  }
+  for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+}
